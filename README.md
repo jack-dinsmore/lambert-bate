@@ -4,6 +4,6 @@ A Lambert's problem solver using the Universal Variables method introduced in "F
 
 ## Lambert's problem
 
-[Lambert's problem](https://en.wikipedia.org/wiki/Lambert%27s_problem) is to compute the orbit of a satellite given two points in its orbit and the time of flight between them. It has many uses, from planning spacecraft rendezvous to orbit determination. No formula exists for the orbital parameters as a function for these parameters, but a fairly straightforward numerical algorithm to extract them does exist.
+[Lambert's problem](https://en.wikipedia.org/wiki/Lambert%27s_problem) is to compute the orbit of a satellite given two points in its orbit and the time of flight between them. It has many uses, from planning spacecraft rendezvous to orbit determination. No formula exists for the orbital parameters as a function for these parameters, but a fairly straightforward root-finding method does exist, which here uses the `roots` crate.
 
 Here, we solve only for the satellite's velocities at the two known points in the orbit. If other orbital parameters are required, they can be easily computed from this. For example, the orbital energy is readily available from position and velocity at fixed time, which gives a semi-major axis. The orbital angular momentum is also determined, yielding the semi-latus rectum.
