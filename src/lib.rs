@@ -1,13 +1,8 @@
+#![allow(non_snake_case)]
 #[cfg(test)]
 mod tests;
 
 const Z_DERIVATIVE_THRESHOLD: f64 = 1.0e-3;
-
-struct LambertConvergency {
-    atol: f64,
-    rtol: f64,
-    max_iter: usize
-}
 
 const fn factorial(num: u64) -> u64 {
     match num {
