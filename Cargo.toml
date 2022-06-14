@@ -5,7 +5,7 @@ edition = "2021"
 license = "MIT"
 repository = "https://github.com/jack-dinsmore/lambert-bate"
 description = "A fast solver for Lambert's problem"
-keywords = ["lambert", "celestial mechanics", "astronomy"]
+keywords = ["lambert", "orbits", "astronomy"]
 categories = ["aerospace", "mathematics", "science"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
