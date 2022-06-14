@@ -11,4 +11,6 @@ categories = ["aerospace", "mathematics", "science"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-roots = "0.0.7"
+
+[dev-dependencies]
+rand = "0.8.5"
