@@ -13,6 +13,8 @@ pub enum LambertError {
     NaNResult,
 }
 
+/// Find the root of a function using Newton's method. This function is specifically
+/// designed for Lambert's problem and incorporates bounds on z.
 pub(crate) fn find_root<Func: Fn(f64) -> f64, Slope: Fn(f64) -> f64>(func: Func, slope: Slope, eps: f64, num_iter: usize) -> Result<f64, LambertError> {
     let mut reset_last_frame = false;
     let mut reset_distance = FIRST_RESET_DIST;
